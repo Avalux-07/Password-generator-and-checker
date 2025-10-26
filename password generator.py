@@ -3,14 +3,12 @@
 import random
 import string
 
-pw = ("Password is stong and secure")
-print(string.ascii_lowercase)
-print(string.ascii_uppercase)
-print(string.digits)
-print(string.punctuation)
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+digits = string.digits
+pncn = string.punctuation
 
-password = string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation
+password = lower + upper + digits + pncn
 
-password = "".join(random.sample(password, 8))
+password = "".join(random.sample(password, 10))
 print("\nYour random password is:",password)
-print("\n",pw)

@@ -11,16 +11,16 @@ special_chars = "!@#$%^&*()_+"
 numbers = "1234567890"
 
 if any(pswrd.islower() for pswrd in password):
-    print("password has lower case")
+    pass
 else:
     print("password does not have lower case")
 if any(pswrd.isupper() for pswrd in password):
-        print("password has upper case")
+        pass
 else:
     print("password does not have upper case")
 if any(pswrd in special_chars for pswrd in password):
-        print("password has special char")
+        pass
 else:
     print("password does not have special char")
     pass
-print("\npassword is valid")
+print("Your given password is valid")
